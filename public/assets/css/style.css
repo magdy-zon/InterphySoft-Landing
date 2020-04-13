@@ -1,0 +1,183 @@
+body {
+  height: 100vh;
+  background: #ebf5fb;
+  /* text-align: center; */
+}
+body h1 {
+  top: 20vh;
+  left: 20vh;
+  font-size: 7.5rem;
+  right: 20vh;
+}
+body h4 {
+  top: 40vh;
+  left: 20vh;
+  font-size: 3.5rem;
+  right: 20vh;
+}
+body h6 {
+  bottom: 10px;
+  right: 0;
+  font-size: 2rem;
+  left: 0;
+}
+
+img.contact-icon {
+  width: 50px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  right: 50%;
+}
+.helvetica {
+  font-family: Roboto;
+  font-weight: bolder;
+}
+.soft-icon {
+  font-family: Monaco;
+}
+.industry {
+  font-family: Industry;
+  font-weight: bolder;
+}
+.slogan-icon, .text-footer {
+  font-family: HelveticaNeue;
+  margin: 20% 0;
+  font-size: 6vw;
+}
+
+.dark-back {
+  position: absolute;
+  bottom: 0;
+  top: 60%;
+  z-index: -1;
+}
+.white-back {
+  position: fixed;
+  height: 100vh;
+  width: 120vw;
+  box-shadow: 10px 0 10px 10px #8080801a;
+  background: #fff;
+  transform: rotate(-5deg);
+  z-index: -1;
+  left: 0;
+  top: 50%;
+}
+.rotate {
+  transform: rotate(-5deg);
+}
+
+
+/* Pantone 2018 */
+.pantone-color {
+    color: #FD8008 !important;
+}
+.pantone-background {
+    background: #FD8008;
+}
+.negro {
+    color: #000;
+}
+/* Pantone 2018 */
+
+
+.square-left {
+    background: #000000BF;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top:0;
+}
+.zoom-out-intro.full-height p{
+    font-size: 24px;
+    bottom: 10%;
+    font-family: Roboto;
+}
+.zoom-out-intro.full-height span {
+    margin: 10% 0;
+    position: absolute;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  body h1 {
+    top: 20vh;
+    left: 12vh;
+    right: 12vh;
+    font-size: 4rem;
+  }
+  body h4 {
+    top: 35vh;
+    left: 12vh;
+    right: 12vh;
+    font-size: 2rem;
+  }
+  body h6 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body h1 {
+    top: 20vh;
+    left: 12vh;
+    right: 12vh;
+    font-size: 4rem;
+  }
+  body h4 {
+    top: 35vh;
+    left: 12vh;
+    right: 12vh;
+    font-size: 2rem;
+  }
+  body h6 {
+    font-size: 2rem;
+  }
+  .video-gota {
+    top: -77px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 125%;
+  }
+}
+
+/*
+@media only screen and (max-width: 600px) {
+  body h1 {
+    top: 20vh;
+    left: 12vh;
+    right: 12vh;
+    font-size: 5rem;
+  }
+  body h4 {
+    top: 35vh;
+    left: 12vh;
+    right: 12vh;
+    font-size: 2rem;
+  }
+  body h6 {
+    font-size: 2rem;
+  }
+} */
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('/assets/fonts/Helvetica-Condensed-Light.otf');
+}
+
+@font-face {
+    font-family: Monaco;
+    src: url('/assets/fonts/Monaco.ttf');
+}
+@font-face {
+    font-family: Roboto;
+    src: url('/assets/fonts/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: Industry;
+    src: url('/assets/fonts/Industry-Inc.ttf');
+}
