@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('landing');
 });
+
+
+Route::get('websocket', function () {
+    return view('welcome');
+});
