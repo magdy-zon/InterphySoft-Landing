@@ -41,12 +41,17 @@ return [
     /*
      * Sets the Access-Control-Allow-Headers response header. `[*]` allows all headers.
      */
-    'allowed_headers' => ['*'],
+    'allowed_headers' => [
+        '*',
+        'https://sockjs-mt1.pusher.com/pusher/'
+    ],
 
     /*
      * Sets the Access-Control-Expose-Headers response header with these headers.
      */
-    'exposed_headers' => [],
+    'exposed_headers' => [
+        'https://sockjs-mt1.pusher.com/pusher/'
+    ],
 
     /*
      * Sets the Access-Control-Max-Age response header when > 0.
