@@ -54,10 +54,14 @@ window.Echo = new Echo({
     encrypted: true,
     wsHost: window.location.hostname,
     wsPort: 6001,
+    wssPort: 6001,
     disableStats: true,
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
 });
 
-window.Echo.channel('home')
-.listen('NewMessage', (e) => {
+window.Echo.channel('solicitud')
+.listen('EnableSOS', (e) => {
     console.log(e);
 });
