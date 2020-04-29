@@ -59351,6 +59351,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   encrypted: true,
   wsHost: window.location.hostname,
   wsPort: 6001,
+  wssPort: 6001,
   disableStats: true,
   headers: {
     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
