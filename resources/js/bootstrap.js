@@ -58,7 +58,8 @@ window.Echo = new Echo({
     disableStats: true,
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
+    },
+    transports: ['websocket', 'polling', 'flashsocket']
 });
 
 window.Echo.channel('solicitud')

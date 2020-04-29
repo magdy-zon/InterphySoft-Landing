@@ -59355,7 +59355,8 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   disableStats: true,
   headers: {
     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-  }
+  },
+  transports: ['websocket', 'polling', 'flashsocket']
 });
 window.Echo.channel('solicitud').listen('EnableSOS', function (e) {
   console.log(e);
