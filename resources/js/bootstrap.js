@@ -56,10 +56,10 @@ window.Echo = new Echo({
     wsPort: 6001,
     wssPort: 6001,
     disableStats: true,
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    },
-    transports: ['websocket', 'polling', 'flashsocket']
+    // headers: {
+    //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    // },
+    // transports: ['websocket', 'polling', 'flashsocket']
 });
 
 window.Echo.channel('solicitud')
