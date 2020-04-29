@@ -1,4 +1,5 @@
 window._ = require('lodash');
+cors = require('cors');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -42,6 +43,16 @@ if (token) {
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
+
+
+var corsOptions = {
+  origin: 'http://127.0.0.1',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+app.get('/broadcasting/auth/', cors(corsOptions), function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for only example.com.'})
+})
 
 import Echo from 'laravel-echo'
 
