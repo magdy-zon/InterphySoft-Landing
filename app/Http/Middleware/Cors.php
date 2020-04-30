@@ -15,25 +15,12 @@ class Cors
      */
     public function handle($request, Closure $next)
     {
-
-
-        // ALLOW OPTIONS METHOD
-        $headers = [
-            'Access-Control-Allow-Methods'=> 'POST, GET, OPTIONS, PUT, DELETE',
-            'Access-Control-Allow-Headers'=> 'X-Requested-With, Content-Type, X-Auth-Token, Origin, Authorization'
-        ];
-
-        if($request->getMethod() == "OPTIONS") {
-            // The client-side application can set only headers allowed in Access-Control-Allow-Headers
-            return Response::make('OK', 200, $headers);
-        }
-
-        $response = $next($request);
-        foreach($headers as $key => $value)
-            $response->header($key, $value);
-        return $response;
-
-
-        // return $next($request);
+        return $next($request)
+              //Url a la que se le dará acceso en las peticiones
+           ->header("Access-Control-Allow-Origin", "*")
+           //Métodos que a los que se da acceso
+           ->header("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS")
+           //Headers de la petición
+           ->header("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Token-Auth, Authorization");
     }
 }

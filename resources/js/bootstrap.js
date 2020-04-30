@@ -43,25 +43,23 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
-
-
 import Echo from 'laravel-echo'
 
 window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: '942849b8295b6df113c6',
-    cluster: 'us2',
-    encrypted: true,
+    key: process.env.MIX_PUSHER_APP_KEY,
+    // cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+    // encrypted: true,
     wsHost: window.location.hostname,
     wsPort: 6001,
     wssPort: 6001,
     disableStats: true,
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    },
-    transports: ['websocket', 'polling', 'flashsocket']
+    // headers: {
+    //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    // },
+    // transports: ['websocket', 'polling', 'flashsocket']
 });
 
 window.Echo.channel('solicitud')
