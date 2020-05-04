@@ -59347,11 +59347,10 @@ window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/d
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: '942849b8295b6df113c6',
-  cluster: 'us2',
+  cluster: 'mt1',
   // encrypted: true,
   wsHost: window.location.hostname,
   wsPort: 6001,
-  wssPort: 6001,
   disableStats: true // headers: {
   //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
   // },
@@ -59451,8 +59450,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/mJuarez/Documents/Laravel/interphysoft/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/mJuarez/Documents/Laravel/interphysoft/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/magdiel/Documents/Laravel/interphySoft/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/magdiel/Documents/Laravel/interphySoft/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

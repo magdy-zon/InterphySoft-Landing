@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar absolute">
   <div class="nav-wrapper">
-    <a href="{{ url('/') }}" class="brand-logo pantone-color">Interphy <span style="color:white;">Soft</span></a>
+    <a href="{{ url('/') }}" class="brand-logo pantone-color" id="logo_landing">Interphy <span style="color:white;">Soft</span></a>
     <ul id="nav-mobile" class="left hide-on-med-and-down">
     </ul>
 

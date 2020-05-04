@@ -12,3 +12,5 @@
 <!-- Initialization script -->
 <script src="{!! url('/assets/js/startup.js') !!}"></script>
 <script src="{!! url('/assets/js/init.js') !!}"></script>
+
+<script type="text/javascript"src="{!! url('/assets/js/interphysoft.js') !!}"></script>
