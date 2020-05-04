@@ -43,22 +43,22 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
-import Echo from 'laravel-echo'
-
-window.Pusher = require('pusher-js');
-
-window.Echo = new Echo({
-    broadcaster: 'pusher',
-    key: '942849b8295b6df113c6',
-    cluster: 'us2',
-    encrypted: false,
-    wsHost: window.location.hostname,
-    wsPort: 6001,
-    disableStats: true,
-    transports: ['websocket']
-});
-
-window.Echo.channel('solicitud')
-.listen('EnableSOS', (e) => {
-    console.log(e);
-});
+// import Echo from 'laravel-echo'
+//
+// window.Pusher = require('pusher-js');
+//
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: '942849b8295b6df113c6',
+//     cluster: 'us2',
+//     encrypted: false,
+//     wsHost: window.location.hostname,
+//     wsPort: 6001,
+//     disableStats: true,
+//     transports: ['websocket']
+// });
+//
+// window.Echo.channel('solicitud')
+// .listen('EnableSOS', (e) => {
+//     console.log(e);
+// });

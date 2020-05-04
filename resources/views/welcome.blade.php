@@ -98,5 +98,20 @@
         </div>
 
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        <script src="https://js.pusher.com/6.0/pusher.min.js"></script>
+        <script>
+
+          // Enable pusher logging - don't include this in production
+          Pusher.logToConsole = true;
+
+          var pusher = new Pusher('942849b8295b6df113c6', {
+            cluster: 'us2'
+          });
+
+          var channel = pusher.subscribe('solicitud');
+          channel.bind('EnableSOS', function(data) {
+              console.log(JSON.stringify(data));
+          });
+        </script>
     </body>
 </html>
