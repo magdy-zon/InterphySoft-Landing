@@ -59,7 +59,7 @@ window.Echo = new Echo({
     // headers: {
     //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     // },
-    // transports: ['websocket', 'polling', 'flashsocket']
+    transports: ['websocket']
 });
 
 window.Echo.channel('solicitud')
