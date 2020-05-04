@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('websocket', function () {
     return view('welcome');
 });
+
+Route::get('env', function () {
+    dd(env('PUSHER_APP_ID'));
+});
