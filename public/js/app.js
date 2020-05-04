@@ -59348,7 +59348,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: '942849b8295b6df113c6',
   cluster: 'us2',
-  // encrypted: true,
+  encrypted: true,
   wsHost: window.location.hostname,
   wsPort: 6001,
   wssPort: 6001,
