@@ -59348,14 +59348,10 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: '942849b8295b6df113c6',
   cluster: 'us2',
-  encrypted: true,
+  encrypted: false,
   wsHost: window.location.hostname,
   wsPort: 6001,
-  wssPort: 6001,
   disableStats: true,
-  // headers: {
-  //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-  // },
   transports: ['websocket']
 });
 window.Echo.channel('solicitud').listen('EnableSOS', function (e) {
